@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<style type="text/css" media="screen">
+		ul{
+			display: flex;
+			/*flex-direction: row;
+			flex-wrap: wrap-reverse;*/
+			flex-flow:row nowrap;
+			 justify-content:space-between;
+			 align-items:stretch ;
+		}
+		ul>div{
+			background: yellow;
+			flex-grow: 0;
+		}
+		ul>div>li{
+			list-style: none;
+			width:100px;
+			border:1px solid #ccc;
+			background: red;
+
+		}
+		ul>div>li:first-child{
+			align-self: flex-start;
+		}
+		ul div:first-child{
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			align-content: stretch;
+			background: blue;
+			order:0;
+			/*flex-basis:100px;*/
+			flex-grow: 1
+		}
+	</style>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+<ul>
+	<div >
+		<li style="item">1</li>
+	<li style="item">2</li>
+	<li style="item">3</li>
+	<li style="item">4</li>
+	<li style="item">5</li>
+	</div>
+	<div>
+		<span	style="height: 1000px;display: block">
+			22
+		</span>
+	</div>
+</ul>
+</body>
+</html>
